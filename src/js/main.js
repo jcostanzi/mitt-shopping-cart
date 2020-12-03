@@ -121,9 +121,21 @@ class UI {
     const lengthElement = document.querySelector('#items-in-cart');
     lengthElement.textContent = `You have ${cart.length} items in your cart.`;
   }
+
+  static clearCartClickEventListener() {
+    const clearCartButtonElement = document.querySelector('#clear-cart-btn');
+
+    clearCartButtonElement.addEventListener('click', (event) => {
+      if (cart.courses.length > 0 && confirm('Are you sure?')) {
+        cart.courses = [];
+        UI.renderCart();
+      }
+    });
+  }
 }
 
 const cart = new Cart();
 
 UI.renderCart();
 UI.bindAddToCartClickEventListeners();
+UI.clearCartClickEventListener();
