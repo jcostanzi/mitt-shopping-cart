@@ -1,0 +1,11 @@
+body {
+  background-color: #f0fef6;
+}
+
+#add-to-cart:hover {
+  background-color: #c5f1ce;
+}
+
+.cart-inner {
+  background: #234c46;
+}

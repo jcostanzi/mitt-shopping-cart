@@ -17,7 +17,7 @@ function copyTask(cb) {
 }
 
 function styleTask(cb) {
-  return src('src/css/*')
+  return src(['src/css/!(colour-changes.css)', 'src/css/colour-changes.css'])
     .pipe(concat('all-styles.min.css'))
     .pipe(sourcemaps.init())
       .pipe(cleanCSS())
