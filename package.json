@@ -1,0 +1,22 @@
+{
+  "name": "mitt-shopping-cart",
+  "version": "1.0.0",
+  "description": "Shopping Cart - Exercise 9 - Group Project",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcostanzi/mitt-shopping-cart.git"
+  },
+  "author": "Javier Costanzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcostanzi/mitt-shopping-cart/issues"
+  },
+  "homepage": "https://github.com/jcostanzi/mitt-shopping-cart#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
