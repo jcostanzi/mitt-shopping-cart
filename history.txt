@@ -1,3 +1,9 @@
+# First part of my history missing:
+#
+# I had another version of gulp previously installed on my computer (as global). I had to uninstal that previous version
+# and install it again. While following this comment: https://github.com/gulpjs/gulp-cli/issues/192#issuecomment-658275686,
+# it was required to me to close the terminal and open it again and it seems VS terminal history doesn't save globally.
+
   501  gulp
   502  touch .vscode
   503  mkdir .vscode
