@@ -4,6 +4,7 @@ const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
 const terser = require('gulp-terser');
 const sourcemaps = require('gulp-sourcemaps');
+const imagemin = require('gulp-imagemin');
 
 function cleanTask(cb) {
   return src('dist/', { read: false, allowEmpty: true })
@@ -33,4 +34,10 @@ function jsTask(cb) {
     .pipe(dest('dist/js'));
 }
 
-exports.default = series(cleanTask, copyTask, styleTask, jsTask);
+function imagesTask(cb) {
+  return src('src/images/*')
+    .pipe(imagemin())
+    .pipe(dest('dist/images'));
+}
+
+exports.default = series(cleanTask, copyTask, styleTask, jsTask, imagesTask);
