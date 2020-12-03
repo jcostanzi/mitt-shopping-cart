@@ -10,6 +10,11 @@ function cleanTask(cb) {
     .pipe(clean());
 }
 
+function copyTask(cb) {
+  return src(['src/*', '!src/css', '!src/js', '!src/images'])
+    .pipe(dest('dist/'));
+}
+
 function styleTask(cb) {
   return src('src/css/*')
     .pipe(concat('all-styles.min.css'))
@@ -28,4 +33,4 @@ function jsTask(cb) {
     .pipe(dest('dist/js'));
 }
 
-exports.default = series(cleanTask, styleTask, jsTask);
+exports.default = series(cleanTask, copyTask, styleTask, jsTask);
