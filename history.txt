@@ -1,0 +1,120 @@
+  501  gulp
+  502  touch .vscode
+  503  mkdir .vscode
+  504  npm i --save-dev gulp-concat
+  505  gulp
+  506  gulp
+  507  npm install --save-dev gulp-clean
+  508  gulp
+  509  gulp
+  510  gulp
+  511  gulp
+  512  gulp
+  513  gulp
+  514  gulp
+  515  gulp
+  516  gulp
+  517  gulp
+  518  gulp
+  519  gulp
+  520  gulp
+  521  gulp
+  522  gulp
+  523  gulp
+  524  gulp
+  525  gulp
+  526  gulp
+  527  npm i --save-dev gulp-css-clean
+  528  npm install gulp-clean-css --save-dev
+  529  css
+  530  gulp
+  531  npm install uglify-js --save-dev
+  532  npm uninstall uglify-js --save-dev
+  533  npm install --save-dev gulp-uglify
+  534  gulp
+  535  gulp
+  536  npm i readable-stream --save-dev
+  537  gulp
+  538  gulp
+  539  gulp
+  540  npm uninstall gulp-uglifyjs --save-dev
+  541  npm uninstall --save-dev readable-stream
+  542  npm install gulp-terser --save-dev
+  543  gulp
+  544  npm install gulp-sourcemaps --save-dev
+  545  npm uninstall gulp-sourcemaps --save-dev
+  546  gulp
+  547  npm install gulp-sourcemaps --save-dev
+  548  gulp
+  549  gulp
+  550  gulp
+  551  gulp
+  552  gulp
+  553  gulp
+  554  gulp
+  555  gulp
+  556  gulp
+  557  gulp
+  558  gulp
+  559  gulp
+  560  gulp
+  561  gulp
+  562  gulp
+  563  gulp
+  564  git push
+  565  npm install --save-dev gulp-imagemin
+  566  gulp
+  567  gulp
+  568  git push
+  569  git switch -C colour-change
+  570  git checkout -b colour-change
+  571  gulp
+  572  gulp
+  573  gulp
+  574  gulp
+  575  gulp
+  576  gulp
+  577  gulp
+  578  gulp
+  579  gulp
+  580  gulp
+  581  gulp
+  582  git push
+  583  git push -u origin colour-change
+  584  git checkout master
+  585  npm uninstal --save-dev gulp-sourcemaps
+  586  gulp
+  587  gulp
+  588  gulp
+  589  gulp
+  590  gulp
+  591  gulp
+  592  gulp
+  593  gulp
+  594  gulp
+  595  gulp
+  596  gulp
+  597  git push
+  598  git merge colour-change
+  599  git status
+  600  git push
+  601  git branch -d colour-change
+  602  git push --delete origin colour-change
+  603  git checkout -b clear-cart-button
+  604  git push -u origin clear-cart-button
+  605  gulp
+  606  gulp
+  607  gulp
+  608  gulp
+  609  gulp
+  610  gulp
+  611  gulp
+  612  gulp
+  613  git push
+  614  git checkout master
+  615  git merge clear-cart-button
+  616  git push
+  617  git branch -d clear-cart-button
+  618  git push --delete origin clear-cart-button
+  619  touch history.txt
+  620  history
