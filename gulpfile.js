@@ -3,6 +3,7 @@ const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
 const terser = require('gulp-terser');
+const sourcemaps = require('gulp-sourcemaps');
 
 function cleanTask(cb) {
   return src('dist/', { read: false, allowEmpty: true })
@@ -12,14 +13,18 @@ function cleanTask(cb) {
 function styleTask(cb) {
   return src('src/css/*')
     .pipe(concat('all-styles.min.css'))
-    .pipe(cleanCSS())
+    .pipe(sourcemaps.init())
+      .pipe(cleanCSS())
+    .pipe(sourcemaps.write('../maps'))
     .pipe(dest('dist/css'));
 }
 
 function jsTask(cb) {
   return src('src/js/*')
     .pipe(concat('all-js.min.js'))
-    .pipe(terser())
+    .pipe(sourcemaps.init())
+      .pipe(terser())
+    .pipe(sourcemaps.write('../maps'))
     .pipe(dest('dist/js'));
 }
 
