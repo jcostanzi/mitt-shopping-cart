@@ -118,3 +118,7 @@
   618  git push --delete origin clear-cart-button
   619  touch history.txt
   620  history
+  621  git add .
+  622  git commit -m "Add history.txt file."
+  623  git push
+  624  history
